@@ -20,15 +20,17 @@
     </div>
 </div>
 {% else %}
-<div class="mx-auto">
-    <div class="text-center">
+<div class="container-fluid">
+    
+    <div class=" text-center"  >
         <br>
         <h2 class="text-center">
             Your cart
         </h2>
         <br>
     </div>
-    <div class="row mx-auto">
+    <div class="flex">
+    <div class=" mx-auto">
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
             <table class="table mytable">
                 <thead class="mythead">
@@ -75,7 +77,7 @@
             </table>
         </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+    <div class=" col-12 col-sm-12 col-md-12 col-lg-6 text-center">
         <table class="table mytable">
             <thead class="mythead">
                 <tr>
@@ -99,6 +101,8 @@
             <a href="{% url 'shop:allProdCat' %}" class="btn btn-secondary btn-block custombtn">Continue shopping</a>
         </div>
     </div>
+
 </div>
+
 {% endif %}
 {% endblock %}
